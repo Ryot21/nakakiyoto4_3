@@ -2,6 +2,9 @@
 .c-flex{
     display: flex;
 
+    // 両端
+    &.-j-c{justify-content: space-between;}
+
     // 縦 > 真ん中
     &.-h-c{align-items: center;}
     &.-h-c_s{@include max(768){align-items: center;}}
@@ -105,6 +108,18 @@
                 }
             }
         }
+        &.-p4_6{
+            .flex-item{
+                @include min(768){
+                    &:nth-child(1){
+                        width: 33%;
+                    }
+                    &:nth-child(2){
+                        width: 60%;
+                    }
+                }
+            }
+        }
         &.-window{
             li{
                 @include max(768){
@@ -199,7 +214,7 @@
     &.-col2_2{
         flex-wrap: wrap;
         li{
-            width: calc(85%);
+            width: calc(100%);
             &:nth-child(1){
                 // width: calc(40% - 5px);
                 margin-left: 0 !important;

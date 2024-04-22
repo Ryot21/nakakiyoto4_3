@@ -323,6 +323,10 @@
 		}
 
 	}
+	// セクション間 > ボーダー
+	&.-borderBtm{
+		border-bottom: 1px solid $main-color--b;
+	}
 }
 
 	// ロゴ関係
