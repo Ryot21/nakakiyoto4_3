@@ -179,125 +179,32 @@
 				width: 30%;
 			}
 
-			// ギャラリー01
-			&.-g-title{
-				top: 4%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				width: auto;
-				@include min(768){
-					top: 3%;
-					left: 77%;
-				}
-			}
-			&.-g-pic01{
-				top: 15%;
-				left: 0%;
-				width: 30%;
-				@include min(768){
-					top: 0%;
-					left: 0%;
-					width: 30%;
-				}
-			}
-			&.-g-pic02{
-				top: 29.1%;
-				left: 35%;
-				width: 30%;
-				@include min(768){
-					top: 18.1%;
-					left: 35%;
-					width: 30%;
-				}
-			}
-			&.-g-pic03{
-				top: 36.1%;
-				right: 0;
-				width: 30%;
-				@include min(768){
-					top: 28.1%;
-					right: 0;
-					width: 30%;
-				}
-			}
-			&.-g-pic04{
-				top: 57.1%;
-				left: 35%;
-				width: 30%;
-				@include min(768){
-					top: 53.1%;
-					left: 35%;
-					width: 30%;
-				}
-			}
-			&.-g-pic05{
-				bottom: 4%;
-				left: 0%;
-				width: 30%;
-				@include min(768){
-					bottom: 4%;
-					left: 0%;
-					width: 30%;
-				}
-			}
-
-			// ギャラリー02
-			&.-g02-title{
-				top: 1%;
-				left: 50%;
-				transform: translateX(-50%);
-				@include min(768){
-					top: 89.3%;
-				}
-			}
-			&.-g02-pic01{
-				top: 15%;
-				left: 35%;
-				width: 30%;
-				@include min(768){
-					top: 0%;
-					left: 35%;
-					width: 30%;
-				}
-			}
-			&.-g02-pic02{
-				top: 24.1%;
-				right: 0;
-				width: 30%;
-				@include min(768){
-					top: 18.1%;
-					right: 0;
-					width: 30%;
-				}
-			}
-			&.-g02-pic03{
-				top: 45.5%;
-				left: 35%;
-				width: 30%;
-				@include min(768){
-					top: 36.1%;
-					left: 35%;
-					width: 30%;
-				}
-			}
-			&.-g02-pic04{
-				top: 45.5%;
-				left: 0;
-				width: 30%;
-				@include min(768){
-					top: 36.5%;
+			// 周辺環境
+			&.-location{
+				&-bird01{
+					top: 0;
 					left: 0;
-					width: 30%;
+					width: 10%;
+					@include min(768){
+						width: 13%;
+					}
 				}
-			}
-			&.-g02-pic05{
-				bottom: 4%;
-				right: 0;
-				width: 30%;
-				@include min(768){
-					bottom: 0;
+				&-bird02{
+					bottom: -15%;
 					right: 0;
-					width: 30%;
+					width: 15%;
+					@include min(768){
+						width: 15%;
+					}
+				}
+				&-self{
+					top: 0;
+					left: 52%;
+						width: 24%;
+					@include min(768){
+						left: 52%;
+						width: 24%;
+					}
 				}
 			}
 		}

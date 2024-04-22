@@ -3,7 +3,12 @@
     display: flex;
 
     // 両端
-    &.-j-c{justify-content: space-between;}
+    &.-jc-sb{justify-content: space-between;}
+    &.-jc-c_s{
+        @include max(768){
+            justify-content: center;
+        }
+    }
 
     // 縦 > 真ん中
     &.-h-c{align-items: center;}
@@ -694,7 +699,6 @@
         flex-wrap: wrap;
         li{
             width: 100%;
-
             @include min(768){
                 width: calc(33% - 15px);
                 &:nth-child(1),
@@ -706,7 +710,7 @@
                 &:nth-child(3),
                 &:nth-child(6),
                 &:nth-child(9){margin-left: 15px;}
-            }    
+            }
         }
     }
     // コンテンツ_カラム（sp,pc:5）
@@ -822,4 +826,38 @@
             
         }
     }
+        // ------------- 物件概要 ----------------
+        &.-gaiyou{
+            li{
+                width: 100%;
+                margin: 0 auto;
+                &.text{
+                    @include min(768){width: calc(35% - 15px);}
+                }
+                &.img{
+                    @include min(768){width: calc(65% - 15px);}
+                }
+            }
+            &.-col2{
+                justify-content: space-between;
+                margin: 0;
+                li{
+                    width: calc(50% - 5px);
+                    margin: 0;
+                    &:nth-child(1){margin-right: 5px !important;}
+                    &:nth-child(2){margin-left: 5px !important;}
+                    @include min(768){
+                        width: calc(50% - 15px);
+                        &:nth-child(1){margin-right: 15px !important;}
+                        &:nth-child(2){margin-left: 15px !important;}
+                    }
+                    &.text{
+                        @include min(768){width: calc(35% - 15px);}
+                    }
+                    &.img{
+                        @include min(768){width: calc(65% - 15px);}
+                    }
+                }
+            }
+        }
 }
