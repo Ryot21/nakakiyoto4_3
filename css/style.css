@@ -1467,6 +1467,12 @@ span.-block {
   }
 }
 
+@media (width >= 768px) {
+  .pdt20 {
+    padding-top: 20% !important;
+  }
+}
+
 /* ------------------------
 　　　padding 下幅
 ------------------------ */
@@ -1605,6 +1611,12 @@ span.-block {
 @media (width >= 768px) {
   .pdb10 {
     padding-bottom: 10% !important;
+  }
+}
+
+@media (width >= 768px) {
+  .pdb20 {
+    padding-bottom: 20% !important;
   }
 }
 
@@ -4012,6 +4024,18 @@ button.swiper-pagination-bullet {
     left: 3.5%;
   }
 }
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-map-self {
+    top: -3%;
+    left: 0%;
+    width: 28%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-map-text {
+  top: 59%;
+  left: 0;
+  width: 30%;
+}
 .c-contents.-imgBg .c-contentsBox.-g-title {
   top: 4%;
   left: 50%;
@@ -4183,7 +4207,7 @@ button.swiper-pagination-bullet {
 }
 @media (768px >= width) {
   .c-contents.-kukakuArea::after {
-    top: -30%;
+    top: -8%;
     left: 65%;
     width: 30%;
   }
@@ -6763,7 +6787,7 @@ a {
   }
   50% {
     transform: translateY(0px) scale(1.1);
-    opacity: 0.8;
+    opacity: 1;
   }
   100% {
     transform: translateY(0px) scale(1);
@@ -6780,7 +6804,7 @@ a {
   }
   50% {
     transform: translateY(0px) scale(0.9);
-    opacity: 0.8;
+    opacity: 1;
   }
   100% {
     transform: translateY(0px) scale(1);

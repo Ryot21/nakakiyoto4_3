@@ -163,8 +163,20 @@
 			}
 
 			// 設備・仕様
-			&.-modalBtn{
+			&.-modalBtn{}
 
+			// 交通
+			&.-map-self{
+				@include min(768){
+					top: -3%;
+					left: 0%;
+					width: 28%;
+				}
+			}
+			&.-map-text{
+				top: 59%;
+				left: 0;
+				width: 30%;
 			}
 
 			// ギャラリー01
@@ -316,7 +328,7 @@
 			animation-iteration-count: infinite;
 			animation-duration:3s;
 			@include max(768){
-				top: -30%;
+				top: -8%;
     			left: 65%;
 	    		width: 30%;
 			}
