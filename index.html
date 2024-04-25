@@ -53,8 +53,47 @@
 </head>
 <body class="p-top">
 
+    <!-- ハンバーガーメニュー -->
+    <nav class="c-hnav">
+        <input id="c-hnav__checkbox" class="c-hnav__cheakbox" type="checkbox"/>
+        <label class="c-hnav__button" for="c-hnav__checkbox">
+            <span></span>
+        </label>
+        <label id="" class="c-hnav__cheakbox c-hnav__close" for="c-hnav__checkbox"></label>
+        <div class="c-hnav__content">
+            <ul class="">
+                <li class=""><a class="s-SS -ws-n -left"  href="index.html"><span class="s-M pdr5 pdr4s">TOP</span>トップ</a></li>
+                <li class=""><a class="s-SS -ws-n -left"  href="#features"><span class="s-M pdr5 pdr4s">FEATURES</span>特徴</a></li>
+                <li class=""><a class="s-SS -ws-n -left"  href="#landscape"><span class="s-M pdr5 pdr4s">LANDSCAPE</span>区画図</a></li>
+                <li class=""><a class="s-SS -ws-n -left"  href="#equipment"><span class="s-M pdr5 pdr4s">EQUIPMENT</span>設備・仕様</a></li>
+                <li class=""><a class="s-SS -ws-n -left"  href="#traffic"><span class="s-M pdr5 pdr4s">TRAFFIC</span>設備・仕様</a></li>
+                <li class=""><a class="s-SS -ws-n -left"  href="#ev"><span class="s-M pdr5 pdr4s">ENVIRONMENT</span>周辺環境</a></li>
+                <li class="mgb15 mgb15s"><a class="s-SS -ws-n -left"  href="https://www.jyukyo-cnst.co.jp/house/order/house-making/" target="_blank"><span class="s-M pdr5 pdr4s">QUALITY</span>住協の家づくり</a></li>
+                <!-- <li class="mgb15 mgb15s"><label class="popup popup-open s-SS -ws-n -left" for="popup01"><span class="s-M pdr5 pdr4s">OVERVIEW</span>物件概要</label></li> -->
+                <!-- 物件概要はここには設置しないこと -->
+                <div class="c-hnav__contactArea">
+                    <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712964455" class="c-hnav__top navItem -lh-1">
+                        <span class="navItem-cTitle -main s-M">資料請求</span>
+                        <br>
+                        <span class="navItem-cTitle -sub s-SS">REQUEST</span>
+                    </a>
+                    <a href="https://www.jyu-g.co.jp/contents/tour?checkid=712964455" class="c-hnav__bottom navItem -lh-1">
+                        <span class="navItem-cTitle -main s-M">見学予約</span>
+                        <br>
+                        <span class="navItem-cTitle -sub s-SS">RESERV</span>
+                    </a>
+                </div>
+            </ul>
+
+
+            <!--　ハンバーガー > ロゴ関係 -->
+            <!-- <div class="c-hnav__logo"><img src="images/logo/SVG/grancia.svg" alt="住協ブランド GRANCIA"></div>
+            <div class="c-hnav__icon"><img src="images/favicon.ico" alt="住協のシンボル"></div> -->
+        </div>
+    </nav>
+
     <!-- コンテンツ -->
-    <main class="c-container mgb10 mgb20s">
+    <main class="c-container mgb20 mgb20s">
         <!-- ファーストビュー > f-view -->
         <div class="c-contents -f-view">
             <!-- メイン画像  -->
@@ -89,7 +128,7 @@
                 <!-- ロゴ -->
                 <div class="c-contents -logoArea mgb10 mgb5s a-moveLoop -sp3 -loop"><img class="" src="images/logo/site-logo-01.png" alt="木"></div>
                 <!-- セクションタイトル -->
-                <p class="s-3L -f-En03 -center -lh-1 mgb5 mgb10s a-fadeUp -sc1">Features<br><span class="s-M">特徴</span></p>
+                <p id="features" class="s-3L -f-En03 -center -lh-1 mgb5 mgb10s a-fadeUp -sc1">Features<br><span class="s-M">特徴</span></p>
                 <!-- ボーダー_テキスト_エリア -->
                 <div class="c-contents w90 mgb10 mgb20s">
                     <p class="s-L -s14 -center -lh-1_5_s -border_top -border_btm"><span class="a-underLine -sc1">民間型 土地区画整理事業部地内</span>に誕生する分譲地<span class="s-M">（清瀬市内初）</span>。</p>
@@ -144,7 +183,7 @@
             </div>
         </div>
         <!-- 区画図セクション -->
-        <div class="c-contents -kukakuArea mgb10 mgb20s">
+        <div id="landscape" class="c-contents -kukakuArea mgb10 mgb20s">
             <!-- セクションタイトル -->
             <p class="s-3L -f-En03 -center -lh-1 mgb5 mgb10s a-fadeUp -sc1">Landscape<br><span class="s-M">区画図</span></p>
             <!-- セクション画像 -->
@@ -193,12 +232,12 @@
         <div class="c-contents -imgBg w1100 w90s mgb20 mgb20s a-zoomImg a-fadeUp -sc-auto">
             <a class="" href="https://www.jyu-g.co.jp/contents/tour?checkid=712964455">
                 <div class="imgBox">
-                    <img class="tb-pc" src="images/btn/banner_bg.jpg"   alt="バナー_背景">
-                    <img class="sp"    src="images/btn/banner_bg_s.jpg" alt="バナー_背景">
+                    <img class="tb-pc" src="images/btn/banner_bg.jpg"   loading="lazy" alt="バナー_背景">
+                    <img class="sp"    src="images/btn/banner_bg_s.jpg" loading="lazy" alt="バナー_背景">
                 </div>
                 <div class="c-contentsBox -center">
-                    <img class="tb-pc" src="images/SVG/banner_cv.svg"   alt="物件エントリー受付中！">
-                    <img class="sp"    src="images/SVG/banner_cv_s.svg" alt="物件エントリー受付中！">
+                    <img class="tb-pc" src="images/SVG/banner_cv.svg"   loading="lazy" alt="物件エントリー受付中！">
+                    <img class="sp"    src="images/SVG/banner_cv_s.svg" loading="lazy" alt="物件エントリー受付中！">
                 </div>
             </a>
         </div>
@@ -233,7 +272,7 @@
         </div>
 
         <!-- 設備・仕様セクション -->
-        <div class="c-contents mgb10 mgb20s">
+        <div id="equipment" class="c-contents mgb10 mgb20s">
             <!-- セクションタイトル -->
             <p class="s-3L -f-En03 -center -lh-1 mgb5 mgb10s a-fadeUp -sc1">Equipment<br><span class="s-M">設備・仕様</span></p>
             <!-- セクション画像 -->
@@ -259,7 +298,7 @@
                     </p>
                 </li>
                 <li class="a-zoomImg mgb5s">
-                    <div class="imgBox a-flipLeft -sc-auto"><img src="images/pic/eq/eq01-01.jpg" alt="公園 兄弟"></div>
+                    <div class="imgBox a-flipLeft -sc-auto"><img src="images/pic/eq/eq01-01.jpg" loading="lazy" alt="公園 兄弟"></div>
                     <p class="-left"><span class="s-kome">※内観写真</span></p>
                 </li>
             </ul>
@@ -283,6 +322,288 @@
                             <label class="popup popup-open" for="popup-eq">
                                 <img src="images/SVG/eq-btn.svg" alt="設備・仕様はこちら">
                             </label>
+
+                        </div>
+                    </li>
+                    <li class="tb-pc a-zoomImg mgb5s a-flipLeft -sc-auto">
+                        <div class="imgBox"><img src="images/pic/eq/eq01-02.jpg" loading="lazy" alt="母親と娘で料理をしている様子"></div>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <!-- その他オプション -->
+        <div class="c-contents pdt10 pdt10s pdb5 pdb5s mgb10 mgb20s" style="background: #3fa7f354;">
+            <div class="w1100 w90s mgb5 mgb10s">
+                <p class="s-LL -s16 -left mgb3 mgb5s">外壁、フローリング、建具等も<br class="sp">あらゆるメーカーのブランドからセレクト可。</p>
+                <p class="s-M -left">住協グループの施工例写真とともに、<br class="sp">代表的なメーカーをご紹介します。</p>
+            </div>
+            <div class="swiper swiper-cards swiper-cards02 swiper-content w30 w75s mgb10 mgb20s">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img loading="lazy" src="images/slider/card02/card02-slide01.png" alt=""></div>
+                    <div class="swiper-slide"><img loading="lazy" src="images/slider/card02/card02-slide02.png" alt=""></div>
+                    <div class="swiper-slide"><img loading="lazy" src="images/slider/card02/card02-slide03.png" alt=""></div>
+                    <div class="swiper-slide"><img loading="lazy" src="images/slider/card02/card02-slide04.png" alt=""></div>
+                    <div class="swiper-slide"><img loading="lazy" src="images/slider/card02/card02-slide05.png" alt=""></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="w1100 w90s mgb5 mgb5s">
+                <p class="s-M -center mgb3 mgb3s">信頼のメーカーとの提携でハイクオリティな設備仕様を提供！</p>
+                <div class="imgBox w85">
+                    <img class="mgb3 mgb3s" src="images/logo/maker-logo.png" alt="Lixil YKKap WOODTEC EIDAI KMEW Panasonic">
+                </div>
+                <p class="s-L -center">and more!</p>
+            </div>
+
+        </div>
+
+        <!-- バナー / 見学予約 -->
+        <div class="c-contents -imgBg w1100 w90s mgb10 mgb20s a-zoomImg  a-fadeUp -sc-auto">
+            <a class="" href="https://www.jyu-g.co.jp/contents/tour?checkid=712964455">
+                <div class="imgBox">
+                    <img class="tb-pc" src="images/btn/banner_bg.jpg"   loading="lazy" alt="バナー_背景">
+                    <img class="sp"    src="images/btn/banner_bg_s.jpg" loading="lazy" alt="バナー_背景">
+                </div>
+                <div class="c-contentsBox -center">
+                    <img class="tb-pc" src="images/SVG/banner_cv.svg"   loading="lazy" alt="物件エントリー受付中！">
+                    <img class="sp"    src="images/SVG/banner_cv_s.svg" loading="lazy" alt="物件エントリー受付中！">
+                </div>
+            </a>
+        </div>
+
+        <!-- 路線図セクション -->
+        <div id="traffic" class="tb-pc c-contents mgb20 mgb20s">
+            <div class="w1100 w90s">
+                <!-- セクションタイトル -->
+                <p class="s-3L -f-En03 -center -lh-1 mgb3 mgb5s a-fadeUp -sc-auto">Traffic<br><span class="s-M">交通</span></p>
+                <p class="s-ML -s14 -center mgb10 mgb10s  a-fadeUp -sc-auto">広範囲へアプローチできる充実の鉄道網</p>
+                <div class="c-contents -imgBg mgb5 mgb5s">
+                    <div class="imgBox"><img src="images/item/map.jpg" loading="lazy" alt="路線図"></div>
+                    <div class="c-contentsBox -map-self a-moveUp -sp3 -loop"><img src="images/item/map-self.png" loading="lazy" alt="GRANCIA中清戸 空色ガーデン"></div>
+                    <div class="c-contentsBox -map-text">
+                        <img class="mgb5 mgb5s  a-fadeLeft -sc-auto" src="images/SVG/map-train.svg" loading="lazy" alt="西武池袋線、副都心線直通有楽町線、副都心線直通東急東横線">
+                        <p class="s-ML -left -lh-1_5 a-fadeLeft -sc-auto">
+                            乗り入れで渋谷、市ヶ谷、<br>
+                            横浜、新宿三丁目等、<br>
+                            主要都市へラクラク移動！
+                        </p>
+                    </div>
+                </div>
+                <ul class="c-flex -col2_3 mgb5s">
+                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc-auto">
+                        <div class="imgBox mgb2 mgb2s"><img src="images/pic/map/map-item01.jpg" loading="lazy" alt="池袋駅までの所要時間"></div>
+                        <p class="s-M -left">池袋駅まで24分（22分）</p>
+                    </li>
+                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc1">
+                        <div class="imgBox mgb2 mgb2s"><img src="images/pic/map/map-item02.jpg" loading="lazy" alt="新宿三丁目駅までの所要時間"></div>
+                        <p class="s-M -left">新宿三丁目駅まで34分（36分）</p>
+                    </li>
+                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc2">
+                        <div class="imgBox mgb2 mgb2s"><img src="images/pic/map/map-item03.jpg" loading="lazy" alt="渋谷駅までの所要時間"></div>
+                        <p class="s-M -left">渋谷駅まで40分（36分）</p>
+                    </li>
+                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc-auto">
+                        <div class="imgBox mgb2 mgb2s"><img src="images/pic/map/map-item04.jpg" loading="lazy" alt="みなとみらい駅までの所要時間"></div>
+                        <p class="s-M -left">みなとみらい駅まで81分（70分）</p>
+                    </li>
+                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc1">
+                        <div class="imgBox mgb2 mgb2s"><img src="images/pic/map/map-item05.jpg" loading="lazy" alt="銀座一丁目駅までの所要時間"></div>
+                        <p class="s-M -left">銀座一丁目駅まで59分（55分）</p>
+                    </li>
+                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc2">
+                        <div class="imgBox mgb2 mgb2s"><img src="images/pic/map/map-item06.jpg" loading="lazy" alt="市ヶ谷駅までの所要時間"></div>
+                        <p class="s-M -left">市ヶ谷駅まで45分（51分）</p>
+                    </li>
+                </ul>
+                <p class="s-SS -left -lh-1_5 a-fadeUp -sc-auto">
+                    上記掲載の電車所要時間は通勤時7：30～9：30に到着する電車を表記しております。（Yahoo！路線情報2023年4月号）<br>
+                    （）内部については日中時9：30～16：30に到着する電車を表記しております。乗換、待ち時間は含まれません。<br>
+                    ※池袋駅へは西武池袋線準急利用。ひばりヶ丘駅で急行に乗り換え。<br>
+                    ※新宿三丁目駅へは西武池袋線快速を利用。練馬駅で西武有楽町線準急に乗り換え、小竹向井原駅より東京メトロ副都心線急行を利用。（乗換不要）<br>
+                    ※渋谷駅へは西武池袋線快速を利用。練馬駅で西武有楽町線準急に乗り換え、Fライナー元町中華街行きに乗り換え。<br>
+                    ※みなとみらい駅へは西武池袋線を利用。ひばりヶ丘駅で西武池袋線快速急行Fライナー元町・中華街行きに乗り換え。<br>
+                    ※銀座一丁目駅へは西武池袋線快速を利用。池袋駅で東京メトロ有楽町線新木場行に乗り換え。<br>
+                    ※市ヶ谷駅へはひばりが丘駅で西武池袋線快速急行に乗り換え、小竹向原駅で東京メトロ有楽町線新木場行きに乗り換え。
+                </p>
+            </div>
+        </div>
+
+        <!-- 周辺環境セクション -->
+        <div id="ev" class="c-contents mgb10 mgb20s">
+            <div class="w1100 w90s mgb5 mgb5s">
+                <!-- セクションタイトル -->
+                <p class="s-3L -f-En03 -center -lh-1 mgb3 mgb5s a-fadeUp -sc-auto">Environment<br><span class="s-M">周辺環境</span></p>
+                <p class="s-ML -s14 -center mgb3 mgb5s a-fadeUp -sc-auto">様々な商業施設、教育施設が揃う利便性が魅力。</p>
+                <p class="s-M -center -lh-1_5 mgb10 mgb10s a-fadeUp -sc-auto">
+                    歩いて行ける距離にスーパーや病院など、<br class="sp">生活に欠かせない施設が集まっています。<br>
+                    近隣には幼稚園や保育園なども多く、小さなお子様の毎日の通園・通学が気になるご家庭も安心できる住環境です。
+                </p>
+                <ul class="c-flex -col2_4 mgb5s">
+                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc-auto">
+                        <div class="imgBox mgb3 mgb3s"><img src="images/pic/location/location-item01.jpg" loading="lazy" alt="きよせ幼稚園 写真"></div>
+                        <p class="s-M -left">きよせ幼稚園</p>
+                    </li>
+                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc2">
+                        <div class="imgBox mgb3 mgb3s"><img src="images/pic/location/location-item02.jpg" loading="lazy" alt="ザ・ダイソー清瀬店 写真"></div>
+                        <p class="s-M -left">ザ・ダイソー　清瀬店</p>
+                    </li>
+                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc-auto">
+                        <div class="imgBox mgb3 mgb3s"><img src="images/pic/location/location-item03.jpg" loading="lazy" alt="サカガミ清瀬店 写真"></div>
+                        <p class="s-M -left">サカガミ　清瀬店</p>
+                    </li>
+                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc2">
+                        <div class="imgBox mgb3 mgb3s"><img src="images/pic/location/location-item04.jpg" loading="lazy" alt="マルエツ清瀬中里店 写真"></div>
+                        <p class="s-M -left">マルエツ　清瀬中里店</p>
+                    </li>
+                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc-auto">
+                        <div class="imgBox mgb3 mgb3s"><img src="images/pic/location/location-item05.jpg" loading="lazy" alt="清瀬けやきホール 写真"></div>
+                        <p class="s-M -left">清瀬けやきホール</p>
+                    </li>
+                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc2">
+                        <div class="imgBox mgb3 mgb3s"><img src="images/pic/location/location-item06.jpg" loading="lazy" alt="清瀬中央公園 写真"></div>
+                        <p class="s-M -left">清瀬中央公園</p>
+                    </li>
+                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc-auto">
+                        <div class="imgBox mgb3 mgb3s"><img src="images/pic/location/location-item07.jpg" loading="lazy" alt="西友清瀬店 写真"></div>
+                        <p class="s-M -left">西友清瀬店</p>
+                    </li>
+                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc2">
+                        <div class="imgBox mgb3 mgb3s"><img src="images/pic/location/location-item08.jpg" loading="lazy" alt="清瀬市役所 写真"></div>
+                        <p class="s-M -left">清瀬市役所</p>
+                    </li>
+                </ul>
+                <ul class="c-flex -col1_3 -jc-sb -jc-c_s">
+                    <li class="a-fadeLeft -sc-auto">
+                        <p class="s-SS -left -lh-2">
+                            清瀬市立清瀬第八小学校・・・・・・約 350M～約 510M<br>
+                            清瀬市立清瀬中学校・・・・・・・・約 870M～約1030M<br>
+                            きよせ保育園・・・・・・・・・・・約1620M～約1780M<br>
+                            きよせ幼稚園・・・・・・・・・・・約 350M～約1780M<br>
+                            清瀬ゆりかご幼稚園・・・・・・・・約 480M～約 640M<br>
+                            清清瀬たから幼稚園・・・・・・・・約 970M～約1130M
+                        </p>
+                    </li>
+                    <li class="a-fadeLeft -sc-auto">
+                        <p class="s-SS -left -lh-2">
+                            西友　清瀬店・・・・・・・・・・・約1600M～約1960M<br>
+                            サカガミ　清瀬店・・・・・・・・・約1570M～約1930M<br>
+                            マルエツ　清瀬中里店・・・・・・・約 620M～約 780M<br>
+                            ファミリーマート　清瀬中清戸店・・約 580M～約 940M<br>
+                            ローソン　清瀬中里三丁目店・・・・約 830M～約 990M<br>
+                            ウェルパーク　清瀬中清戸店・・・・約 580M～約 940M<br>
+                            ウェルシア　清瀬中里店・・・・・・約 930M～約1090M<br>
+                            ダイソー　清瀬店・・・・・・・・・約1230M～約1590M
+                        </p>
+                    </li>
+                    <li class="a-fadeLeft -sc-auto">
+                        <p class="s-SS -left -lh-2">
+                            中清戸けやき公園・・・・・・・・・約 360M～約 520M<br>
+                            清瀬金山緑地公園・・・・・・・・・約 960M～約1120M<br>
+                            柳瀬川・・・・・・・・・・・・・・約 960M～約1120M<br>
+                            清瀬市役所・・・・・・・・・・・・約 580M～約 740M<br>
+                            清瀬けやきホール・・・・・・・・・約1650M～約2010M<br>
+                            （清瀬市立元町図書館）<br>
+                            JA東京みらい　清瀬支店・・・・・・約 790M～約 950M<br>
+                            （みらい清瀬新鮮館）
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="w1300 w95s">
+                <div class="c-contents -imgBg">
+                    <div class="imgBox"><img src="images/item/location-map.jpg" loading="lazy" alt="周辺のMAP"></div>
+                    <div class="c-contentsBox -location-bird01 a-fadeLeft -sc-auto">
+                        <div class=" a-moveLoop -sp2 -loop"><img src="images/item/location-bird01.png" loading="lazy" alt="緑の鳥01"></div>
+                    </div>
+                    <div class="c-contentsBox -location-bird02 a-fadeUp -sc-auto">
+                        <div class=" a-moveLoop -sp4 -loop"><img src="images/item/location-bird02.png" loading="lazy" alt="緑の鳥02"></div>
+                    </div>
+                    <div class="c-contentsBox -location-self a-fadeDown -sc2"><img src="images/item/location-self.png" loading="lazy" alt="GRANCIA中清戸 空色ガーデン"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- バナー / 見学予約 -->
+        <div class="c-contents -imgBg w1100 w90s mgb10 mgb20s a-zoomImg  a-fadeUp -sc-auto">
+            <a class="" href="https://www.jyu-g.co.jp/contents/tour?checkid=712964455">
+                <div class="imgBox">
+                    <img class="tb-pc" src="images/btn/banner_bg.jpg"   alt="バナー_背景">
+                    <img class="sp"    src="images/btn/banner_bg_s.jpg" alt="バナー_背景">
+                </div>
+                <div class="c-contentsBox -center">
+                    <img class="tb-pc" src="images/SVG/banner_cv.svg"   alt="物件エントリー受付中！">
+                    <img class="sp"    src="images/SVG/banner_cv_s.svg" alt="物件エントリー受付中！">
+                </div>
+            </a>
+        </div>
+
+
+    </main>
+    <!-- //コンテンツ -->
+
+    <!-- footer -->
+    <footer id="footer" class="c-footer mgb3 mgb25s">
+        <div class="c-footer__btnArea -col2 mgb4 mgb10s">
+            <!-- 物件概要ボタン -->
+            <ul class="c-flex -gaiyou -col2">
+                <li>
+                    <label class="s-S popup -color02 popup-open" for="popup01">
+                        <span class="s-ML -s14 -center -ls-2">建築条件付土地販売</span><br>物件概要はこちら
+                    </label>
+                    <!-- 01.物件概要 > 新地戸建 -->
+                    <input type="checkbox" id="popup01" >
+                    <label class="popup-overlay" for="popup01"></label>
+                    <div class="popup-window">
+                        <!-- 閉じるボタン -->
+                        <label class="popup-close" for="popup01">
+                            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
+                                <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
+                            </svg>
+                        </label>
+                        <!-- iframe -->
+                        <iframe id="inlineFrame01" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712964455"></iframe>
+                    </div>
+                </li>
+                <li>
+                    <label class="s-S popup -color02 popup-open" for="popup02">
+                        <span class="s-ML -s14 -center -ls-n">建築条件なし土地販売</span><br>物件概要はこちら
+                    </label>
+                    <!-- 02.物件概要 > 建築条件付き土地 -->
+                    <input type="checkbox" id="popup02" >
+                    <label class="popup-overlay" for="popup02"></label>
+                    <div class="popup-window">
+                        <!-- 閉じるボタン -->
+                        <label class="popup-close" for="popup02">
+                            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
+                                <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
+                            </svg>
+                        </label>
+                        <!-- iframe -->
+                        <iframe id="inlineFrame02" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712964520"></iframe>
+                    </div>
+                </li>
+            </ul>
+            <!-- //物件概要ボタン -->
+        </div>
+
+        <div class="c-footer__shopArea mgb1 mgb1s">
+            <ul class="c-footer__shopFlex mgb2 mgb2s">
+                <li><a href="https://www.jyu-g.co.jp/contents/office_info/10" target="_blank"><img src="images/logo/SVG/higashikurume-shop.svg" alt="住協 東久留米支店 情報"></a></li>
+                <li>
+                    <img class="tb-pc" src="images/logo/SVG/higashikurume-tel.svg" alt="住協 東久留米支店 電話番号">
+                    <a class="sp" href="tel:0120-569-888"><img src="images/logo/SVG/higashikurume-tel.svg" alt="住協 東久留米支店 電話番号"></a>
+                </li>
+            </ul>
+            <!-- <p class="pc c-contents s-SS -left">株式会社住協　■国土交通大臣免許（4）第6956号 ■国土交通大臣許可（般-2）第23733号 ■（公社）東京都宅地建物取引業協会会員 ■（公社）全国宅地建物取引業保証協会会員 ■（公社）首都圏不動産公正取引協議会加盟 ■（一社）全国住宅産業協会会員</p> -->
+        </div>
+    </footer>
+
 
                             <!---------------------------------
                                 モーダル > 設備・仕様
@@ -446,286 +767,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="tb-pc a-zoomImg mgb5s a-flipLeft -sc-auto">
-                        <div class="imgBox"><img src="images/pic/eq/eq01-02.jpg" alt="母親と娘で料理をしている様子"></div>
-                    </li>
-                </ul>
 
-
-            </div>
-        </div>
-
-        <!-- その他オプション -->
-        <div class="c-contents pdt10 pdt10s pdb5 pdb5s mgb10 mgb20s" style="background: #3fa7f354;">
-            <div class="w1100 w90s mgb5 mgb10s">
-                <p class="s-LL -s16 -left mgb3 mgb5s">外壁、フローリング、建具等も<br class="sp">あらゆるメーカーのブランドからセレクト可。</p>
-                <p class="s-M -left">住協グループの施工例写真とともに、<br class="sp">代表的なメーカーをご紹介します。</p>
-            </div>
-            <div class="swiper swiper-cards swiper-cards02 swiper-content w30 w75s mgb10 mgb20s">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img loading="lazy" src="images/slider/card02/card02-slide01.png" alt=""></div>
-                    <div class="swiper-slide"><img loading="lazy" src="images/slider/card02/card02-slide02.png" alt=""></div>
-                    <div class="swiper-slide"><img loading="lazy" src="images/slider/card02/card02-slide03.png" alt=""></div>
-                    <div class="swiper-slide"><img loading="lazy" src="images/slider/card02/card02-slide04.png" alt=""></div>
-                    <div class="swiper-slide"><img loading="lazy" src="images/slider/card02/card02-slide05.png" alt=""></div>
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-            <div class="w1100 w90s mgb5 mgb5s">
-                <p class="s-M -center mgb3 mgb3s">信頼のメーカーとの提携でハイクオリティな設備仕様を提供！</p>
-                <div class="imgBox w85">
-                    <img class="mgb3 mgb3s" src="images/logo/maker-logo.png" alt="Lixil YKKap WOODTEC EIDAI KMEW Panasonic">
-                </div>
-                <p class="s-L -center">and more!</p>
-            </div>
-
-        </div>
-
-        <!-- バナー / 見学予約 -->
-        <div class="c-contents -imgBg w1100 w90s mgb10 mgb20s a-zoomImg  a-fadeUp -sc-auto">
-            <a class="" href="https://www.jyu-g.co.jp/contents/tour?checkid=712964455">
-                <div class="imgBox">
-                    <img class="tb-pc" src="images/btn/banner_bg.jpg"   alt="バナー_背景">
-                    <img class="sp"    src="images/btn/banner_bg_s.jpg" alt="バナー_背景">
-                </div>
-                <div class="c-contentsBox -center">
-                    <img class="tb-pc" src="images/SVG/banner_cv.svg"   alt="物件エントリー受付中！">
-                    <img class="sp"    src="images/SVG/banner_cv_s.svg" alt="物件エントリー受付中！">
-                </div>
-            </a>
-        </div>
-
-        <!-- 路線図セクション -->
-        <div class="tb-pc c-contents mgb20 mgb20s">
-            <div class="w1100 w90s">
-                <!-- セクションタイトル -->
-                <p class="s-3L -f-En03 -center -lh-1 mgb3 mgb5s a-fadeUp -sc-auto">Traffic<br><span class="s-M">交通</span></p>
-                <p class="s-ML -s14 -center mgb10 mgb10s  a-fadeUp -sc-auto">広範囲へアプローチできる充実の鉄道網</p>
-                <div class="c-contents -imgBg mgb5 mgb5s">
-                    <div class="imgBox"><img src="images/item/map.jpg" alt="路線図"></div>
-                    <div class="c-contentsBox -map-self a-moveUp -sp3 -loop"><img src="images/item/map-self.png" alt="GRANCIA中清戸 空色ガーデン"></div>
-                    <div class="c-contentsBox -map-text">
-                        <img class="mgb5 mgb5s  a-fadeLeft -sc-auto" src="images/SVG/map-train.svg" alt="西武池袋線、副都心線直通有楽町線、副都心線直通東急東横線">
-                        <p class="s-ML -left -lh-1_5 a-fadeLeft -sc-auto">
-                            乗り入れで渋谷、市ヶ谷、<br>
-                            横浜、新宿三丁目等、<br>
-                            主要都市へラクラク移動！
-                        </p>
-                    </div>
-                </div>
-                <ul class="c-flex -col2_3 mgb5s">
-                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc-auto">
-                        <div class="imgBox mgb2 mgb2s"><img src="images/pic/map/map-item01.jpg" alt=""></div>
-                        <p class="s-M -left">池袋駅まで24分（22分）</p>
-                    </li>
-                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc1">
-                        <div class="imgBox mgb2 mgb2s"><img src="images/pic/map/map-item02.jpg" alt=""></div>
-                        <p class="s-M -left">新宿三丁目駅まで34分（36分）</p>
-                    </li>
-                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc2">
-                        <div class="imgBox mgb2 mgb2s"><img src="images/pic/map/map-item03.jpg" alt=""></div>
-                        <p class="s-M -left">渋谷駅まで40分（36分）</p>
-                    </li>
-                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc-auto">
-                        <div class="imgBox mgb2 mgb2s"><img src="images/pic/map/map-item04.jpg" alt=""></div>
-                        <p class="s-M -left">みなとみらい駅まで81分（70分）</p>
-                    </li>
-                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc1">
-                        <div class="imgBox mgb2 mgb2s"><img src="images/pic/map/map-item05.jpg" alt=""></div>
-                        <p class="s-M -left">銀座一丁目駅まで59分（55分）</p>
-                    </li>
-                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc2">
-                        <div class="imgBox mgb2 mgb2s"><img src="images/pic/map/map-item06.jpg" alt=""></div>
-                        <p class="s-M -left">市ヶ谷駅まで45分（51分）</p>
-                    </li>
-                </ul>
-                <p class="s-SS -left -lh-1_5 a-fadeUp -sc-auto">
-                    上記掲載の電車所要時間は通勤時7：30～9：30に到着する電車を表記しております。（Yahoo！路線情報2023年4月号）<br>
-                    （）内部については日中時9：30～16：30に到着する電車を表記しております。乗換、待ち時間は含まれません。<br>
-                    ※池袋駅へは西武池袋線準急利用。ひばりヶ丘駅で急行に乗り換え。<br>
-                    ※新宿三丁目駅へは西武池袋線快速を利用。練馬駅で西武有楽町線準急に乗り換え、小竹向井原駅より東京メトロ副都心線急行を利用。（乗換不要）<br>
-                    ※渋谷駅へは西武池袋線快速を利用。練馬駅で西武有楽町線準急に乗り換え、Fライナー元町中華街行きに乗り換え。<br>
-                    ※みなとみらい駅へは西武池袋線を利用。ひばりヶ丘駅で西武池袋線快速急行Fライナー元町・中華街行きに乗り換え。<br>
-                    ※銀座一丁目駅へは西武池袋線快速を利用。池袋駅で東京メトロ有楽町線新木場行に乗り換え。<br>
-                    ※市ヶ谷駅へはひばりが丘駅で西武池袋線快速急行に乗り換え、小竹向原駅で東京メトロ有楽町線新木場行きに乗り換え。
-                </p>
-            </div>
-        </div>
-
-        <!-- 周辺環境セクション -->
-        <div class="c-contents mgb10 mgb20s">
-            <div class="w1100 w90s mgb5 mgb5s">
-                <!-- セクションタイトル -->
-                <p class="s-3L -f-En03 -center -lh-1 mgb3 mgb5s a-fadeUp -sc-auto">Environment<br><span class="s-M">周辺環境</span></p>
-                <p class="s-ML -s14 -center mgb3 mgb5s a-fadeUp -sc-auto">様々な商業施設、教育施設が揃う利便性が魅力。</p>
-                <p class="s-M -center -lh-1_5 mgb10 mgb10s a-fadeUp -sc-auto">
-                    歩いて行ける距離にスーパーや病院など、<br class="sp">生活に欠かせない施設が集まっています。<br>
-                    近隣には幼稚園や保育園なども多く、小さなお子様の毎日の通園・通学が気になるご家庭も安心できる住環境です。
-                </p>
-                <ul class="c-flex -col2_4 mgb5s">
-                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc-auto">
-                        <div class="imgBox mgb3 mgb3s"><img src="images/pic/location/location-item01.jpg" alt=""></div>
-                        <p class="s-M -left">きよせ幼稚園</p>
-                    </li>
-                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc2">
-                        <div class="imgBox mgb3 mgb3s"><img src="images/pic/location/location-item02.jpg" alt=""></div>
-                        <p class="s-M -left">ザ・ダイソー　清瀬店</p>
-                    </li>
-                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc-auto">
-                        <div class="imgBox mgb3 mgb3s"><img src="images/pic/location/location-item03.jpg" alt=""></div>
-                        <p class="s-M -left">サカガミ　清瀬店</p>
-                    </li>
-                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc2">
-                        <div class="imgBox mgb3 mgb3s"><img src="images/pic/location/location-item04.jpg" alt=""></div>
-                        <p class="s-M -left">マルエツ　清瀬中里店</p>
-                    </li>
-                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc-auto">
-                        <div class="imgBox mgb3 mgb3s"><img src="images/pic/location/location-item05.jpg" alt=""></div>
-                        <p class="s-M -left">清瀬けやきホール</p>
-                    </li>
-                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc2">
-                        <div class="imgBox mgb3 mgb3s"><img src="images/pic/location/location-item06.jpg" alt=""></div>
-                        <p class="s-M -left">清瀬中央公園</p>
-                    </li>
-                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc-auto">
-                        <div class="imgBox mgb3 mgb3s"><img src="images/pic/location/location-item07.jpg" alt=""></div>
-                        <p class="s-M -left">西友清瀬店</p>
-                    </li>
-                    <li class="a-zoomImg mgb5 mgb5s a-flipLeft -sc2">
-                        <div class="imgBox mgb3 mgb3s"><img src="images/pic/location/location-item08.jpg" alt=""></div>
-                        <p class="s-M -left">清瀬市役所</p>
-                    </li>
-                </ul>
-                <ul class="c-flex -col1_3 -jc-sb -jc-c_s">
-                    <li class="a-fadeLeft -sc-auto">
-                        <p class="s-SS -left -lh-2">
-                            清瀬市立清瀬第八小学校・・・・・・約 350M～約 510M<br>
-                            清瀬市立清瀬中学校・・・・・・・・約 870M～約1030M<br>
-                            きよせ保育園・・・・・・・・・・・約1620M～約1780M<br>
-                            きよせ幼稚園・・・・・・・・・・・約 350M～約1780M<br>
-                            清瀬ゆりかご幼稚園・・・・・・・・約 480M～約 640M<br>
-                            清清瀬たから幼稚園・・・・・・・・約 970M～約1130M
-                        </p>
-                    </li>
-                    <li class="a-fadeLeft -sc-auto">
-                        <p class="s-SS -left -lh-2">
-                            西友　清瀬店・・・・・・・・・・・約1600M～約1960M<br>
-                            サカガミ　清瀬店・・・・・・・・・約1570M～約1930M<br>
-                            マルエツ　清瀬中里店・・・・・・・約 620M～約 780M<br>
-                            ファミリーマート　清瀬中清戸店・・約 580M～約 940M<br>
-                            ローソン　清瀬中里三丁目店・・・・約 830M～約 990M<br>
-                            ウェルパーク　清瀬中清戸店・・・・約 580M～約 940M<br>
-                            ウェルシア　清瀬中里店・・・・・・約 930M～約1090M<br>
-                            ダイソー　清瀬店・・・・・・・・・約1230M～約1590M
-                        </p>
-                    </li>
-                    <li class="a-fadeLeft -sc-auto">
-                        <p class="s-SS -left -lh-2">
-                            中清戸けやき公園・・・・・・・・・約 360M～約 520M<br>
-                            清瀬金山緑地公園・・・・・・・・・約 960M～約1120M<br>
-                            柳瀬川・・・・・・・・・・・・・・約 960M～約1120M<br>
-                            清瀬市役所・・・・・・・・・・・・約 580M～約 740M<br>
-                            清瀬けやきホール・・・・・・・・・約1650M～約2010M<br>
-                            （清瀬市立元町図書館）<br>
-                            JA東京みらい　清瀬支店・・・・・・約 790M～約 950M<br>
-                            （みらい清瀬新鮮館）
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="w1300 w95s">
-                <div class="c-contents -imgBg">
-                    <div class="imgBox"><img src="images/item/location-map.jpg" alt="周辺のMAP"></div>
-                    <div class="c-contentsBox -location-bird01 a-fadeLeft -sc-auto">
-                        <div class=" a-moveLoop -sp2 -loop"><img  src="images/item/location-bird01.png" alt=""></div>
-                    </div>
-                    <div class="c-contentsBox -location-bird02 a-fadeUp -sc-auto">
-                        <div class=" a-moveLoop -sp4 -loop"><img src="images/item/location-bird02.png" alt=""></div>
-                    </div>
-                    <div class="c-contentsBox -location-self a-fadeDown -sc2"><img src="images/item/location-self.png" alt="GRANCIA中清戸 空色ガーデン"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- バナー / 見学予約 -->
-        <div class="c-contents -imgBg w1100 w90s mgb10 mgb20s a-zoomImg  a-fadeUp -sc-auto">
-            <a class="" href="https://www.jyu-g.co.jp/contents/tour?checkid=712964455">
-                <div class="imgBox">
-                    <img class="tb-pc" src="images/btn/banner_bg.jpg"   alt="バナー_背景">
-                    <img class="sp"    src="images/btn/banner_bg_s.jpg" alt="バナー_背景">
-                </div>
-                <div class="c-contentsBox -center">
-                    <img class="tb-pc" src="images/SVG/banner_cv.svg"   alt="物件エントリー受付中！">
-                    <img class="sp"    src="images/SVG/banner_cv_s.svg" alt="物件エントリー受付中！">
-                </div>
-            </a>
-        </div>
-
-
-    </main>
-    <!-- //コンテンツ -->
-
-    <!-- footer -->
-    <footer id="footer" class="c-footer mgb3 mgb25s">
-        <div class="c-footer__btnArea -col2 mgb4 mgb10s">
-            <!-- 物件概要ボタン -->
-            <ul class="c-flex -gaiyou -col2">
-                <li>
-                    <label class="s-S popup -color02 popup-open" for="popup01">
-                        <span class="s-ML -s14 -center -ls-2">建築条件付土地販売</span><br>物件概要はこちら
-                    </label>
-                    <!-- 01.物件概要 > 新地戸建 -->
-                    <input type="checkbox" id="popup01" >
-                    <label class="popup-overlay" for="popup01"></label>
-                    <div class="popup-window">
-                        <!-- 閉じるボタン -->
-                        <label class="popup-close" for="popup01">
-                            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
-                                <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
-                            </svg>
-                        </label>
-                        <!-- iframe -->
-                        <iframe id="inlineFrame01" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712964455"></iframe>
-                    </div>
-                </li>
-                <li>
-                    <label class="s-S popup -color02 popup-open" for="popup02">
-                        <span class="s-ML -s14 -center -ls-n">建築条件なし土地販売</span><br>物件概要はこちら
-                    </label>
-                    <!-- 02.物件概要 > 建築条件付き土地 -->
-                    <input type="checkbox" id="popup02" >
-                    <label class="popup-overlay" for="popup02"></label>
-                    <div class="popup-window">
-                        <!-- 閉じるボタン -->
-                        <label class="popup-close" for="popup02">
-                            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
-                                <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
-                            </svg>
-                        </label>
-                        <!-- iframe -->
-                        <iframe id="inlineFrame02" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712964520"></iframe>
-                    </div>
-                </li>
-            </ul>
-            <!-- //物件概要ボタン -->
-        </div>
-
-        <div class="c-footer__shopArea mgb1 mgb1s">
-            <ul class="c-footer__shopFlex mgb2 mgb2s">
-                <li><a href="https://www.jyu-g.co.jp/contents/office_info/10" target="_blank"><img src="images/logo/SVG/higashikurume-shop.svg" alt="住協 東久留米支店 情報"></a></li>
-                <li>
-                    <img class="pc" src="images/logo/SVG/higashikurume-tel.svg" alt="住協 東久留米支店 電話番号">
-                    <a class="sp" href="tel:0120-569-888"><img src="images/logo/SVG/higashikurume-tel.svg" alt="住協 東久留米支店 電話番号"></a>
-                </li>
-            </ul>
-            <!-- <p class="pc c-contents s-SS -left">株式会社住協　■国土交通大臣免許（4）第6956号 ■国土交通大臣許可（般-2）第23733号 ■（公社）東京都宅地建物取引業協会会員 ■（公社）全国宅地建物取引業保証協会会員 ■（公社）首都圏不動産公正取引協議会加盟 ■（一社）全国住宅産業協会会員</p> -->
-        </div>
-    </footer>
     <!-- //footer -->
     <script>
         // トップページ > カードレイアウト01
