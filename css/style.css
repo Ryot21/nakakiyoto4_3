@@ -350,7 +350,7 @@ h1.s-SS, h2.s-SS, h3.s-SS, h4.s-SS, h5.s-SS, h6.s-SS, p.s-SS, a.s-SS, span.s-SS,
 }
 @media (width >= 768px) {
   h1.s-SS, h2.s-SS, h3.s-SS, h4.s-SS, h5.s-SS, h6.s-SS, p.s-SS, a.s-SS, span.s-SS, label.s-SS, button.s-SS {
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(1rem, 2vw, 1.12rem);
   }
 }
 @media (768px >= width) {
@@ -407,7 +407,7 @@ h1.s-L, h2.s-L, h3.s-L, h4.s-L, h5.s-L, h6.s-L, p.s-L, a.s-L, span.s-L, label.s-
 }
 @media (width >= 768px) {
   h1.s-L, h2.s-L, h3.s-L, h4.s-L, h5.s-L, h6.s-L, p.s-L, a.s-L, span.s-L, label.s-L, button.s-L {
-    font-size: clamp(1.6rem, 2vw, 2.5rem);
+    font-size: clamp(1.6rem, 2vw, 2.35rem);
   }
 }
 @media (768px >= width) {
@@ -425,7 +425,7 @@ h1.s-LL, h2.s-LL, h3.s-LL, h4.s-LL, h5.s-LL, h6.s-LL, p.s-LL, a.s-LL, span.s-LL,
 }
 @media (width >= 768px) {
   h1.s-LL, h2.s-LL, h3.s-LL, h4.s-LL, h5.s-LL, h6.s-LL, p.s-LL, a.s-LL, span.s-LL, label.s-LL, button.s-LL {
-    font-size: clamp(1.8rem, 3vw, 3rem);
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
   }
 }
 @media (768px >= width) {
