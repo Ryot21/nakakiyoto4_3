@@ -178,6 +178,97 @@
 				left: 0;
 				width: 30%;
 			}
+			// 0503_追加
+			&.-map-text01{
+				top: 0%;
+				left: 31%;
+				@include min(768){
+					top: 0%;
+					left: 31%;
+				}
+			}
+			&.-map-text02{
+				top: 0%;
+				left: 56.5%;
+				@include min(768){
+					top: 0%;
+					left: 56.5%;
+				}
+			}
+			&.-map-text03{
+				top: 16.5%;
+				left: 43.5%;
+				@include min(768){
+					top: 16.5%;
+					left: 43.5%;
+				}
+			}
+			&.-map-text04{
+				top: 25%;
+				left: 86.5%;
+				@include min(768){
+					top: 25%;
+					left: 87.5%;
+				}
+			}
+			&.-map-text05{
+				top: .5%;
+				left: 12%;
+				@include min(768){
+					top: 1%;
+					left: 12%;
+				}
+			}
+			&.-map-text06{
+				top: 6.5%;
+				left: 57.5%;
+				@include min(768){
+					top: 7%;
+					left: 57.5%;
+				}
+			}
+			&.-map-text07{
+				top: 10.5%;
+				left: 68.5%;
+				@include min(768){
+					top: 11.5%;
+					left: 68.5%;
+				}
+			}
+			&.-map-text08{
+				top: 10%;
+				left: 82.5%;
+				@include min(768){
+					top: 12%;
+					left: 80.5%;
+				}
+			}
+			&.-map-self01{
+				top: 57%;
+				left: 74%;
+				transform: scale(0.95) translate(3%, -50%);
+				@include min(768){
+					top: 57%;
+					left: 71%;
+					transform: scale(0.8) translate(32%, -50%);
+				}
+				@include min(1000){
+					top: 57%;
+					left: 75%;
+					transform: scale(0.9) translate(33%, -50%);
+				}
+			}
+			&.-map-self02{
+				top: 39%;
+    			left: 56%;
+				transform: scale(0.95) translate(3%, -50%);
+				@include min(768){
+					top: 40%;
+					left: 49%;
+					transform: scale(0.9) translate(40%, -40%);
+				}
+			}
+
 
 			// 周辺環境
 			&.-location{

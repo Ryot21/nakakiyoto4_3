@@ -123,7 +123,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     &.-ls-5{letter-spacing: .5rem;}
 
     // 影
-    &.-shadow{filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.637)) !important;}
+    &.-sh{filter: drop-shadow(1px 1px 0px white) !important;}
 
     // 折り返し禁止
     &.-ws-n{white-space: nowrap}
