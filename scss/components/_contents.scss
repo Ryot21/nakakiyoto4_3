@@ -51,15 +51,16 @@
 				top: 48%;
 				left: 50%;
 				transform: translateX(-50%);
-				width: auto;
+				width: 85%;
 				@include min(768){// tb
-					top: 57%;
+					top: 45%;
 					left: 50%;
+					width: 40%;
 				}
 			}
 			&.-f-subTitle{// サブタイトル
-				top: 64%;
-				left: 17%;
+				top: 2%;
+				left: 4%;
 				width: auto;
 				@include min(768){// tb
 					top: 2%;
@@ -68,12 +69,12 @@
 			}
 			&.-f-logo{// ロゴ関係
 				top: 15%;
-				left: 15%;
+				left: 50%;
+				transform: translateX(-50%);
 				width: 70%;
 				@include min(768){
-					top: 15%;
-					left: 37%;
-					width: 25%;
+					top: 10%;
+					width: 22%;
 				}
 			}
 
@@ -113,37 +114,48 @@
 					width: 18%;
 				}
 			}
-			&.-self02{
+			&.-self02{// 0720_修正
+				left: 10.5%;
+				width: 35%;
+
 				top: 43%;
-				left: 66.5%;
-				width: 23%;
+				// left: 66.5%;
+				// width: 23%;
 				@include min(768){
-					top: 70%;
-					left: 52.5%;
-					width: 18%;
+					top: 69%;
+					left: 7.5%;
+					width: 20%;
+
+					// top: 70%;
+					// left: 52.5%;
+					// width: 18%;
 				}
 			}
-			&.-pic01{
-				bottom: 0;
+			&.-pic01{// 0720_修正
+				bottom: -1%;
 				left: 2%;
 				width: 30%;
 				@include min(768){
-					left: 9%;
+					left: 7.5%;
+
+					// left: 9%;
 					width: 18%;
 				}
 			}
-			&.-pic02{
-				bottom: 0;
+			&.-pic02{// 0720_修正
+				bottom: -1%;
 				left: 35%;
 				width: 30%;
 				@include min(768){
+					left: 26.5%;
+
 					bottom: 0;
-					left: 28%;
+					// left: 28%;
 					width: 18%;
 				}
 			}
 			&.-pic03{
-				bottom: 0;
+				bottom: -1%;
 				left: 68%;
 				width: 30%;
 				@include min(768){

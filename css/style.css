@@ -3702,8 +3702,8 @@ button.swiper-pagination-bullet {
 
 .c-hnav {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   z-index: 9999;
 }
 @media (width >= 768px) {
@@ -4007,17 +4007,18 @@ button.swiper-pagination-bullet {
   top: 48%;
   left: 50%;
   transform: translateX(-50%);
-  width: auto;
+  width: 85%;
 }
 @media (width >= 768px) {
   .c-contents.-f-view .c-contentsBox.-f-title {
-    top: 57%;
+    top: 45%;
     left: 50%;
+    width: 40%;
   }
 }
 .c-contents.-f-view .c-contentsBox.-f-subTitle {
-  top: 64%;
-  left: 17%;
+  top: 2%;
+  left: 4%;
   width: auto;
 }
 @media (width >= 768px) {
@@ -4028,14 +4029,14 @@ button.swiper-pagination-bullet {
 }
 .c-contents.-f-view .c-contentsBox.-f-logo {
   top: 15%;
-  left: 15%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 70%;
 }
 @media (width >= 768px) {
   .c-contents.-f-view .c-contentsBox.-f-logo {
-    top: 15%;
-    left: 37%;
-    width: 25%;
+    top: 10%;
+    width: 22%;
   }
 }
 .c-contents.-imgBg .c-contentsBox {
@@ -4072,42 +4073,42 @@ button.swiper-pagination-bullet {
   }
 }
 .c-contents.-imgBg .c-contentsBox.-self02 {
+  left: 10.5%;
+  width: 35%;
   top: 43%;
-  left: 66.5%;
-  width: 23%;
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-self02 {
-    top: 70%;
-    left: 52.5%;
-    width: 18%;
+    top: 69%;
+    left: 7.5%;
+    width: 20%;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-pic01 {
-  bottom: 0;
+  bottom: -1%;
   left: 2%;
   width: 30%;
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-pic01 {
-    left: 9%;
+    left: 7.5%;
     width: 18%;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-pic02 {
-  bottom: 0;
+  bottom: -1%;
   left: 35%;
   width: 30%;
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-pic02 {
+    left: 26.5%;
     bottom: 0;
-    left: 28%;
     width: 18%;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-pic03 {
-  bottom: 0;
+  bottom: -1%;
   left: 68%;
   width: 30%;
 }
@@ -6831,8 +6832,10 @@ a {
   --------------------------------------- */
 }
 .a-fade {
+  opacity: 0;
   animation-name: fadeAnime;
   perspective-origin: left center;
+  animation-fill-mode: forwards;
 }
 @keyframes fadeAnime {
   from {
@@ -6843,8 +6846,10 @@ a {
   }
 }
 .a-fadeUp {
+  opacity: 0;
   animation-name: fadeUpAnime;
   perspective-origin: left center;
+  animation-fill-mode: forwards;
 }
 @keyframes fadeUpAnime {
   from {
@@ -6857,7 +6862,10 @@ a {
   }
 }
 .a-fadeDown {
+  opacity: 0;
   animation-name: fadeDownAnime;
+  perspective-origin: left center;
+  animation-fill-mode: forwards;
 }
 @keyframes fadeDownAnime {
   from {
@@ -6870,7 +6878,10 @@ a {
   }
 }
 .a-fadeRight {
+  opacity: 0;
   animation-name: fadeRightAnime;
+  perspective-origin: left center;
+  animation-fill-mode: forwards;
 }
 @keyframes fadeRightAnime {
   from {
@@ -6883,7 +6894,10 @@ a {
   }
 }
 .a-fadeLeft {
+  opacity: 0;
   animation-name: fadeLeftAnime;
+  perspective-origin: left center;
+  animation-fill-mode: forwards;
 }
 @keyframes fadeLeftAnime {
   from {
